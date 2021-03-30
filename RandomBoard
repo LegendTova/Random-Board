@@ -1,0 +1,20 @@
+from numpy import random
+
+def print2DArray(array):
+    for i in array:
+        for j in i:    
+            print(j, end=" ")
+        print("")
+def findSum(array):
+    sum = 0;
+    
+    for i in array:
+        for j in i:
+            sum += j
+            
+    print(sum)
+
+randomBoard = random.randint(10, size=(10, 10))
+
+print2DArray(randomBoard)
+findSum(randomBoard)
